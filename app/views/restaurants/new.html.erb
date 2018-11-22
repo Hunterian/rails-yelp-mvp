@@ -1,0 +1,12 @@
+<%= form_for @restaurant do |f| %>
+  <%= f.label :name, "Name of Restaurant:" %>
+  <%= f.text_field :name %>
+
+  <%= f.label :address, "Enter address:" %>
+  <%= f.text_field :address %>
+
+  <%= f.label :category, "What category?" %>
+  <%= f.text_field :category %>
+
+  <%= f.submit class: "btn btn primary" %>
+<% end %>
